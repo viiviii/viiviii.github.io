@@ -95,7 +95,7 @@ analytics:
 # Site Author
 author:
   name             : "🤍viiviii🤍"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/author_avatar.jpg"
   bio              : "Good **Rubber Duck Debugging** Partner"
   location         : "Seoul, KO"
   email            :
