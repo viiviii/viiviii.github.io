@@ -4,6 +4,7 @@ date: 2021-02-14
 ---
 
 
+
 # SSH 설정하기
 
 ## 1. SSH key 생성
@@ -28,7 +29,7 @@ $ ssh-keygen -t ed25519 -C "your_email@example.com" -f "id_ed25519_userName"
 
 입력한 이메일을 사용한 새 SSH key가 생성됨
 
-```bash
+```
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/c/Users/JohnDoe/.ssh/id_ed25519): # A
 Created directory '/c/Users/JohnDoe/.ssh'.
@@ -98,13 +99,13 @@ $ ssh -T git@userName
 아래와 같이 뜨면 연결에 성공한 것
 
 ```
-Enter passphrase for key '/c/Users/Bob/.ssh/id_ed25519_username2':
+Enter passphrase for key '/c/Users/JohnDoe/.ssh/id_ed25519_username2':
 Hi username2! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
 만약 이렇게 뜨면 yes
 
-```bash
+```
 The authenticity of host 'github.com (...)' can't be established.
 RSA key fingerprint is SHA256:A1B2C3D4A1B2C3D4A1B2C3D4.
 Are you sure you want to continue connecting (yes/no/[fingerprint])?   # yes
@@ -112,6 +113,8 @@ Warning: Permanently added 'github.com, ...' (RSA) to the list of known hosts.
 Enter passphrase for key '/c/Users/JohnDoe/.ssh/id_ed25519_userName':
 Hi user2! You've successfully authenticated, but GitHub does not provide shell access.
 ```
+
+
 
 # SSH 사용하기
 
@@ -190,5 +193,5 @@ $ git remote set-url origin git@github-user2:USERNAME/REPOSITORY.git
 
 - 잘 변경 됐는지 `git remote -v` 로 다시 확인
 
-완료
+🎉🎉🎉완료
 
