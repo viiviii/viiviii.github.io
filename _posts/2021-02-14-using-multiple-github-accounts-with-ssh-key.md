@@ -68,7 +68,7 @@ Host github-user2
    IdentitiesOnly yes
 ```
 
-![Github%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A7%E1%84%85%E1%85%A5%20%E1%84%80%E1%85%A2%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%2088c877dfc9964fcfbe84fd62cbe701b0/Untitled.png](Github%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A7%E1%84%85%E1%85%A5%20%E1%84%80%E1%85%A2%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%2088c877dfc9964fcfbe84fd62cbe701b0/Untitled.png)
+![내가 한 설정 예시 이미지](/assets/images/post/2021-02-14-using-multiple-github-accounts-with-ssh-key-1.png)
 
 난 이렇게 설정함
 
@@ -88,7 +88,7 @@ $ clip < ~/.ssh/id_ed25519_userName.pub
 - `Title` → 키에 대한 설명, 예) 'Home MacBook Air'
 - `Key` → 아까 복사한 SSH public key 붙여넣기
 
-![Github%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A7%E1%84%85%E1%85%A5%20%E1%84%80%E1%85%A2%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%2088c877dfc9964fcfbe84fd62cbe701b0/Untitled%201.png](Github%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A7%E1%84%85%E1%85%A5%20%E1%84%80%E1%85%A2%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%2088c877dfc9964fcfbe84fd62cbe701b0/Untitled%201.png)
+![Github SSH 설정 화면 캡처 이미지](/assets/images/post/2021-02-14-using-multiple-github-accounts-with-ssh-key-2.png)
 
 ### 연결 테스트
 
@@ -124,7 +124,7 @@ Hi user2! You've successfully authenticated, but GitHub does not provide shell a
 
 주소는 GitHub에서 SSH 선택 후 복사 가능
 
-![Github%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A7%E1%84%85%E1%85%A5%20%E1%84%80%E1%85%A2%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%2088c877dfc9964fcfbe84fd62cbe701b0/Untitled%202.png](Github%20%E1%84%80%E1%85%A8%E1%84%8C%E1%85%A5%E1%86%BC%20%E1%84%8B%E1%85%A7%E1%84%85%E1%85%A5%20%E1%84%80%E1%85%A2%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%92%E1%85%A1%E1%84%80%E1%85%B5%2088c877dfc9964fcfbe84fd62cbe701b0/Untitled%202.png)
+![Github SSH 주소 복사 화면 캡처 이미지](/assets/images/post/2021-02-14-using-multiple-github-accounts-with-ssh-key-3.png)
 
 config가 아래와 같을 때
 
