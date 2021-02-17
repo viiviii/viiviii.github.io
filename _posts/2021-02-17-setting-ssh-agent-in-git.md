@@ -5,11 +5,22 @@ date: 2021-02-17
 
 # ssh-agent 설정하기
 
-ssh는 (일반적으로) 로그인 세션동안 실행되는데 나같은 경우 계정을 여러개 쓰기 위해 `id_ed25512` 파일이 없이 `id_ed25519_username` 패턴으로 생성했기 때문에 git 명령을 할 때 마다 비밀번호를 입력해줘야된다.
+[SSH 설정하기](https://viiviii.github.io/using-multiple-github-accounts-with-ssh-key/)를 하고나면 git 명령을 할 때마다 비밀번호를 입력해야 됨
 
-[SSH Agent Explained](https://smallstep.com/blog/ssh-agent-explained/)
+매번 비밀번호를 입력하는 것은 불편하므로 ssh-agent를 사용함
 
-매번 비밀번호를 입력하지 않기 위해 ssh-agent 설정을 하기로 한다
+> ssh-agent란?  
+> 메모리에 ssh key와 certificates를 보관하는 SSH key manager
+
+[SSH Agent에 대한 더 자세한 설명 링크](https://smallstep.com/blog/ssh-agent-explained/)
+
+- 클라이언트가 서버에 연결 시 `public key` 제공
+- 서버가 클라이언트에게 메세지에 `private key` 서명 요청
+- 클라이언트는 ssh-agent에게 메세지에 서명하도록 요청하고 이걸 다시 서버에게 전달
+- 서버는 클라이언트의 `public key`를 사용하여 서명 확인
+
+대략 이런 흐름인데 우리가 서버에 요청할 때 마다 매번 비밀번호를 치는 것을 ssh-agent가 대신 해준다고 볼 수 있음
+
 
 ---
 
@@ -22,25 +33,27 @@ Agent pid 3254
 
 ### 2. ssh-add로 추가
 
+* 여기서 `id_ed25519_username`는 생성한 파일명
+
 ```
-$ ssh-add ~/.ssh/id_ed25519_*username*
+$ ssh-add ~/.ssh/id_ed25519_username
 Could not open a connection to your authentication agent.
+```
+
+Mac OS에서는 키 체인에 추가할 수 있음
+
+```
+$ ssh-add -K /path/to/private_key
 ```
 
 ### (선택사항) 조금 더 간단하게 한줄로 쓰기
 
-하지만 매번 저렇게 쓰는건 귀찮으므로 한줄로 쓰기로 한다
+하지만 매번 저렇게 쓰는 건 귀찮다면 한 줄로 쓸 수 있음
 
 ```bash
 eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
 ```
 
-난 연결됐다는 로그도 보고싶어서 테스트 명령어`ssh -T`도 추가하였음 (체크 딜레이 존재)
-
-```bash
-eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username && ssh -T git@github.com
-```
-
 ### (선택사항) git alias로 추가해서 쓰기
 
-[ssh-agent란?](https://www.notion.so/ssh-agent-cf25174ceba94ea98a406c19260409ed)
+// TODO: 포스팅 추가하기
