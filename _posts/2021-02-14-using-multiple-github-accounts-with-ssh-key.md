@@ -193,5 +193,21 @@ $ git remote set-url origin git@github-user2:USERNAME/REPOSITORY.git
 
 - 잘 변경 됐는지 `git remote -v` 로 다시 확인
 
-🎉🎉🎉완료
+🎉🎉🎉완료!
 
+
+▶ 다음글 ▶  [ssh-agent 설정하여 비밀번호 최초 1회만 입력하기](https://viiviii.github.io/setting-ssh-agent-in-git/)
+
+---
+
+# 참고링크
+
+[Changing a remote's URL](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
+
+[Using multiple github accounts with ssh keys](https://gist.github.com/oanhnn/80a89405ab9023894df7)
+
+[한 컴퓨터에서 여러 개의 깃허브 계정 사용하기](https://velog.io/@jay/multiplegithubaccounts)
+
+[SSH Keygen을 이용한 키 생성 방법과 ssh-agent에 대한 간단 설명](https://devlog.jwgo.kr/2019/04/17/ssh-keygen-and-ssh-agent/)
+
+---
