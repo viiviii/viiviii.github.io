@@ -50,8 +50,8 @@ $ ssh-add -K /path/to/private_key
 
 하지만 매번 저렇게 쓰는 건 귀찮다면 한 줄로 쓸 수 있음
 
-```bash
-eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
+```
+$ eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
 ```
 
 ### (선택사항) git alias로 추가해서 쓰기
