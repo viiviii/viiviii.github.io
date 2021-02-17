@@ -40,7 +40,7 @@ $ ssh-add ~/.ssh/id_ed25519_username
 Could not open a connection to your authentication agent.
 ```
 
-Mac OS에서는 키 체인에 추가할 수 있음
+Mac에서는 키 체인에 추가할 수 있음
 
 ```
 $ ssh-add -K /path/to/private_key
@@ -57,3 +57,11 @@ $ eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
 ### (선택사항) git alias로 추가해서 쓰기
 
 // TODO: 포스팅 추가하기
+
+---
+
+# 참고링크
+
+[Mac에서 키 체인 추가](https://stackoverflow.com/questions/21095054/ssh-key-still-asking-for-password-and-passphrase)
+
+---
