@@ -7,7 +7,7 @@ date: 2021-02-17
 
 [SSH 설정하기](https://viiviii.github.io/using-multiple-github-accounts-with-ssh-key/)를 하고나면 git 명령을 할 때마다 비밀번호를 입력해야 됨
 
-매번 비밀번호를 입력하는 것은 불편하므로 ssh-agent를 사용함
+매번 비밀번호를 입력하는 것은 불편하므로 ssh-agent를 사용
 
 > ssh-agent란?  
 > 메모리에 ssh key와 certificates를 보관하는 SSH key manager
@@ -39,7 +39,7 @@ Agent pid 3254
 $ ssh-add ~/.ssh/id_ed25519_username
 Could not open a connection to your authentication agent.
 ```
-
+  
 Mac에서는 키 체인에 추가할 수 있음
 
 ```
@@ -48,7 +48,7 @@ $ ssh-add -K /path/to/private_key
 
 ### (선택사항) 조금 더 간단하게 한줄로 쓰기
 
-하지만 매번 저렇게 쓰는 건 귀찮다면 한 줄로 쓸 수 있음
+하지만 매번 저렇게 쓰는게 귀찮다면 한 줄로 쓸 수 있음
 
 ```
 $ eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
@@ -56,7 +56,7 @@ $ eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
 
 ### (선택사항) git alias로 추가해서 쓰기
 
-// TODO: 포스팅 추가하기
+[⚙ git bash alias 설정하기](https://viiviii.github.io/add-git-alias/)
 
 ---
 
