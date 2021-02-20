@@ -1,5 +1,6 @@
 ---
-title: "git bash alias 설정하기"
+title: "Git bash alias 설정하기"
+excerpt: "Git bash alias를 vi나 명령어로 설증하는 방법"
 date: 2021-02-18
 ---
 
