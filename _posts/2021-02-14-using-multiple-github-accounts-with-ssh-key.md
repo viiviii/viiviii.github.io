@@ -1,5 +1,6 @@
 ---
-title: "SSH key를 사용해서 Github 계정 여러개 사용하기"
+title: "SSH key를 사용해서 Github 계정 여러 개 사용하기"
+excerpt: "한 컴퓨터에서 여러 개의 Github 계정을 사용하고 싶은 경우를 위해 계정마다 SSH 설정을 하여 사용하기"
 date: 2021-02-14
 ---
 
