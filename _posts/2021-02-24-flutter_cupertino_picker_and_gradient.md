@@ -1,10 +1,8 @@
 ---
-title: "CupertinoPicker와 Gradient"
+title: "Flutter CupertinoPicker와 Gradient"
 excerpt: "CupertinoPicker에 Gradient 그리기 및 Gradient issues에 대해"
 date: 2021-02-24
 ---
-
-# CupertinoPicker and Gradient
 
 사용중이던 쿠퍼티노 피커가 상수로 지정되어 있어 아이패드 등 에서는 다소 작게 느껴져 미디어쿼리를 사용하여 기기 높이의 %로 생성되도록 변경하였다.
 
