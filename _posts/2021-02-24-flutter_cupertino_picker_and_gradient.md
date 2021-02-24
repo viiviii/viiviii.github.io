@@ -92,6 +92,14 @@ class _PickerGradient extends StatelessWidget {
 
 기존 코드는 위, 아래로 위젯 두개가 합쳐져있고 가운데는 비어있는 상태였지만 변경 코드는 전체를 채우는 위젯이기 때문에 꼭 `IgnorePointer`를 사용하여 포인터 이벤트에서 제외시켜야 한다.
 
+---
+
+# 참고링크
+
 [IgnorePointer class](https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html)
 
 자매품 [AbsorbPointer class](https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html)
+
+---
+
+
