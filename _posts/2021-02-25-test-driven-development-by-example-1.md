@@ -3,10 +3,6 @@ title: "테스트 주도 개발(TDD): 01. 다중 통화를 지원하는 Money �
 excerpt: "테스트 주도 개발(저자 켄트백) 01장"
 date: 2021-02-25
 ---
-# 다중 통화를 지원하는 Money 객체
-
-챕터: 1
-페이지: p. 41 ~ 52
 
 ## 할일 목록 작성하기
 
@@ -18,7 +14,7 @@ date: 2021-02-25
 
 ## 시작하기
 
-> ⭐ 객체를 만들면서 시작하는게 아니라 테스트를 먼저 만들어야 함
+> 객체를 만들면서 시작하는게 아니라 테스트를 먼저 만들어야 함
 
 테스트를 작성할 때는
 
@@ -43,7 +39,7 @@ amount를 private로 만들기
 4. 모든 테스트를 실행해서 테스트가 성공하는 것을 확인
 5. 중복 제거를 위해 리팩토링
 
-위 주기 5단계를 목표로 할일 목록을 바탕으로 간단한 곱셈 예시를 작성하여 고쳐나감
+위 🚩주기 5단계🚩를 목표로 할일 목록을 바탕으로 간단한 곱셈 예시를 작성하여 고쳐나감
 
 ### STEP 1
 
@@ -54,12 +50,12 @@ amount를 private로 만들기
 
 ```java
 class tdd_01 {
-	@Test
-	void testMultiplication() {
-		Dollar five = new Dollar(5);
-		five.times(2);
-		assertEquals(10, five.amount);
-	}
+    @Test
+    void testMultiplication() {
+        Dollar five = new Dollar(5);
+        five.times(2);
+        assertEquals(10, five.amount);
+    }
 }
 ```
 
@@ -73,24 +69,24 @@ class tdd_01 {
 
 ```java
 class tdd_01 {
-	@Test
-	void testMultiplication() {
-		Dollar five = new Dollar(5);
-		five.times(2);
-		assertEquals(10, five.amount);
-	}
+    @Test
+    void testMultiplication() {
+        Dollar five = new Dollar(5);
+        five.times(2);
+        assertEquals(10, five.amount);
+    }
 }
 
 class Dollar {
-	int amount;
+    int amount;
 
-	Dollar(int amount) {
-		// TODO Auto-generated constructor stub
-	}
+    Dollar(int amount) {
+        // TODO Auto-generated constructor stub
+    }
 	
-	void times(int multiplier) {
-		// TODO 
-	}
+    void times(int multiplier) {
+        // TODO 
+    }
 }
 ```
 
@@ -103,9 +99,7 @@ class Dollar {
 - 현재 가장 쉬운 최소 작업 ⇒ amount 값에 직접 10을 초기화
 
 ```java
-class Dollar {
-	int amount = 10;
-...
+int amount = 10;
 ```
 
 ### STEP 4
@@ -126,7 +120,7 @@ int amount = 5 * 2;
 int amount;
 
 void times(int multiplier) {
-	amount = 5 * 2;
+    amount = 5 * 2;
 }
 
 ```
@@ -135,40 +129,40 @@ void times(int multiplier) {
 
 ```java
 Dollar(int amount) {
-	this.amount = amount;
+    this.amount = amount;
 }
 
 void times(int multiplier) {
-	amount = amount * 2;
+    amount = amount * 2;
 }
 ```
 
 ```java
 void times(int multiplier) {
-	amount *= multiplier;
+    amount *= multiplier;
 }
 ```
 
 ```java
 class tdd_01 {
-	@Test
-	void testMultiplication() {
-		Dollar five = new Dollar(5);
-		five.times(2);
-		assertEquals(10, five.amount);
-	}
+    @Test
+    void testMultiplication() {
+        Dollar five = new Dollar(5);
+        five.times(2);
+        assertEquals(10, five.amount);
+    }
 }
 
 class Dollar {
-	int amount;
+    int amount;
 
-	Dollar(int amount) {
-		this.amount = amount;
-	}
+    Dollar(int amount) {
+        this.amount = amount;
+    }
 
-  void times(int multiplier) {
-		amount *= multiplier;
-	}
+    void times(int multiplier) {
+        amount *= multiplier;
+    }
 }
 ```
 
