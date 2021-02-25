@@ -60,7 +60,7 @@ amount를 private로 만들기
 - Dollar 객체 없음, 생성자 없음 등으로 당연히 컴파일 에러 뜸
 
 ```java
-class tdd_01 {
+class Chapter01 {
     @Test
     void testMultiplication() {
         Dollar five = new Dollar(5);
@@ -79,7 +79,7 @@ class tdd_01 {
 - `times()` 스텁 구현(stub implementation): 메서드의 껍데기만 만들어두는 것
 
 ```java
-class tdd_01 {
+class Chapter01 {
     @Test
     void testMultiplication() {
         Dollar five = new Dollar(5);
@@ -158,7 +158,7 @@ void times(int multiplier) {
 최종 전체 코드
 
 ```java
-class tdd_01 {
+class Chapter01 {
     @Test
     void testMultiplication() {
         Dollar five = new Dollar(5);
