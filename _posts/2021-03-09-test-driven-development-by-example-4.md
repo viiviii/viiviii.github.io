@@ -23,7 +23,6 @@ date: 2021-03-09
 Dollar.times()가 하는 일
 
 - Dollar객체에 인자 값 만큼 곱한 값을 갖는 Dollar를 반환
-- ⇒ 하지만 테스트는 이 `Dollar.times()`가 하는 일을 정확하게 말하지 않고있음
 
 ```java
 Dollar five = new Dollar(5);
@@ -33,7 +32,7 @@ product = five.times(3);
 assertEquals(15, product.amount);
 ```
 
-기존 코드는 이렇게 `times()`가 하는 일이 직관적이지 않음
+하지만 기존 테스트는 이 `Dollar.times()`가 하는 일을 정확하게 말하지 않고있음
 
 ## 🚩 STEP 1
 
@@ -51,9 +50,9 @@ assertEquals(new Dollar(15), product.amount);
 
 ## 🚩 STEP 2
 
-> 수정 2. 변수 `product` 제거
+> 수정 2. 변수 product 제거
 
-`product.amount` 도 `five.times()`로 변경하고, 필요 없어진 `product` 변수를 제거함
+`product.amount`도 `five.times()`로 변경하고, 필요 없어진 `product` 변수를 제거함
 
 ```java
 Dollar five = new Dollar(5);
@@ -67,7 +66,7 @@ assertEquals(new Dollar(15), five.times(3));
 
 > 수정 3. 변수  amount를 private하게 변경
 
-이제 Dollar 객체의 amount 인스턴스 변수를 사용하는 코드는 테스트
+이제 Dollar 객체의 amount인스턴스 변수를 사용하는 코드는 테스트 코드에서도 없으므로 변수를 private하게 변경할 수 있게 됨
 
 ```java
 class Dollar {
