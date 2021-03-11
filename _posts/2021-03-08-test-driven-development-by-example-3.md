@@ -1,6 +1,6 @@
 ---
 title: "테스트 주도 개발(TDD): 03장 정리"
-excerpt: "03장 모두를 위한 평등. Value Object Pattern, 삼각측량 전략 등"
+excerpt: "[03장 모두를 위한 평등] Value Object Pattern, 삼각측량 전략 등"
 date: 2021-03-08
 ---
 
