@@ -96,7 +96,7 @@ class Franc {
 
 🚩 테스트 실행하여 성공하는 것을 확인
 
-![단위 테스트를 성공하는 이미지](/assets/images/post/2021-03-11-test-driven-development-by-example-5.md)
+![단위 테스트를 성공하는 이미지](/assets/images/post/2021-03-11-test-driven-development-by-example-5.png)
 
 ## 다시 보는 주기 5단계
 
