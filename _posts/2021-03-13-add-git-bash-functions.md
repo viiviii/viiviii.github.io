@@ -1,3 +1,4 @@
+---
 title: "Git bash functions 등록하기"
 excerpt: "functions를 등록하여 alias처럼 사용하기, alias에 인자 받고 싶을 때"
 date: 2021-03-13
@@ -30,7 +31,7 @@ moveImage() { mv /c/파일위치/"$1" /c/이동할위치/"$2"; }
 
 - `$1`, `$2`는 순서대로 인자에 들어온 값들을 뜻함
 
-[Git bash alias setting](https://www.notion.so/Git-bash-alias-setting-7a9522221ec845598a007389085f5ddf) 
+[👀 Git bash alias setting하는 방법](https://viiviii.github.io/add-git-alias/) 
 
 ### 사용
 
@@ -74,11 +75,10 @@ pushUntitledImage() { pushImage Untitled.png $1; }
 
 ## ⚠주의점
 
-`{ mv..` 이 부분에서 { 뒤에 띄어쓰기가 없으면 내 기준 에러났음
+`{ mv..` 이 부분에서 { 뒤에 띄어쓰기가 없으면 내 기준 syntax 에러났음
 
 ![Git%20bash%20functions%20cf8a76d9d43c4785900f408e6aeb4fb0/Untitled%201.png](Git%20bash%20functions%20cf8a76d9d43c4785900f408e6aeb4fb0/Untitled%201.png)
 
-syntax 에러
 
 ## 추가로 해야 할 것
 
