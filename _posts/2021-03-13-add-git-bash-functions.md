@@ -71,13 +71,13 @@ pushUntitledImage() { pushImage Untitled.png $1; }
 
 최종으로 사용하는 이미지
 
-![Git%20bash%20functions%20cf8a76d9d43c4785900f408e6aeb4fb0/Untitled.png](Git%20bash%20functions%20cf8a76d9d43c4785900f408e6aeb4fb0/Untitled.png)
+![최종적으로 bash에서 실제 사용하는 이미지](/assets/images/post/2021-03-13-add-git-bash-functions_1.png)
 
 ## ⚠주의점
 
 `{ mv..` 이 부분에서 { 뒤에 띄어쓰기가 없으면 내 기준 syntax 에러났음
 
-![Git%20bash%20functions%20cf8a76d9d43c4785900f408e6aeb4fb0/Untitled%201.png](Git%20bash%20functions%20cf8a76d9d43c4785900f408e6aeb4fb0/Untitled%201.png)
+![vi에서 띄어쓰기를 잘못하여 bash에서 에러나는 이미지](/assets/images/post/2021-03-13-add-git-bash-functions_2.png)
 
 
 ## 추가로 해야 할 것
