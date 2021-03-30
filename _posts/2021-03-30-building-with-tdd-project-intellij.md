@@ -16,7 +16,7 @@ date: 2021-03-30
 ## 목표
 
 - 빨간 에러 없애기
-- 인텔리제이 문서에서 소개된 아래처럼 바꾸기
+- 인텔리제이 문서에서 소개된 아래처럼 구조 바꾸기
 
 ![인텔리제이 문서 중 디렉터리 구조 스크린샷](/assets/images/post/2021-03-30-building-with-tdd-project-intellij_2.png)
 
@@ -37,7 +37,6 @@ date: 2021-03-30
 - java 폴더 우클릭 → Mark Directory as → Test Sources Root
 
 ![(좌)변경 전, (우)변경 후 이미지](/assets/images/post/2021-03-30-building-with-tdd-project-intellij_4.png)
-
 
 ## STEP 3
 
@@ -72,18 +71,17 @@ date: 2021-03-30
 
 상위 디렉토리 중 어느것도 소스 루트가 아닐 때 이럴 수 있음
 
-우클릭 → Mark Directory As → Sources Root 혹은 Test Sources Root 설정
-
-
+우클릭 → Mark Directory As → Sources Root 혹은 Test Sources Root 설정  
+  
+  
 ## 폴더 색깔의 의미
 
 - 회색 폴더 → 컨텐츠 루트, 콘텐츠의 최상위 폴더
 - 하늘색 폴더 → 소스 루트: 컴파일해야하는 프로덕션 코드 보관
 - 초록색 폴더 → 테스트 소스 루트: 테스트와 관련된 코드 보관
     - 테스트 코드를 프로덕션 코드와 별도로 보관
-
-    [Content roots | IntelliJ IDEA](https://www.jetbrains.com/help/idea/content-roots.html#folder-categories)
-
+]- [Content roots | IntelliJ IDEA](https://www.jetbrains.com/help/idea/content-roots.html#folder-categories)
+   
 
 ## 컴파일 저장 위치
 
