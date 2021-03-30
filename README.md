@@ -24,7 +24,7 @@
 내가 구글에서 얻고자 하는 정보를 다른 사람들도 필요할 것 이므로 리소스를 더 효율적으로 사용하자    
 개발 중 삽질하여 해결한 내용, 알게된 팁, 어려웠지만 풀어서 이해한 개념, 정보가 부족한 에러로그 등을 포스팅 하자
 
-도움된 글
-https://jbee.io/essay/growth-mistaken-2020/
+도움된 글    
+https://jbee.io/essay/growth-mistaken-2020/    
 https://jbee.io/essay/writing-of-developers/
 
