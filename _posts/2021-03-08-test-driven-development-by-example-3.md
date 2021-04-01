@@ -80,8 +80,8 @@ void testEquality() {
 ```java
 @Override
 public boolean equals(Object obj) {
-    Dollar other = (Dollar) obj;
-    return amount == other.amount;
+    Dollar dollar = (Dollar) obj;
+    return amount == dollar.amount;
 }
 ```
 
