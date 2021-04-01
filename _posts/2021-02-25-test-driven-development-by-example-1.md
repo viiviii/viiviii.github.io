@@ -58,13 +58,11 @@ amount를 private로 만들기
 - Dollar 객체 없음, 생성자 없음 등으로 당연히 컴파일 에러 뜸
 
 ```java
-class Chapter01 {
-    @Test
-    void testMultiplication() {
-        Dollar five = new Dollar(5);
-        five.times(2);
-        assertEquals(10, five.amount);
-    }
+@Test
+void testMultiplication() {
+    Dollar five = new Dollar(5);
+    five.times(2);
+    assertEquals(10, five.amount);
 }
 ```
 
