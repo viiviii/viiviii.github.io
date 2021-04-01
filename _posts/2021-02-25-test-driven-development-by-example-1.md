@@ -77,13 +77,11 @@ class Chapter01 {
 - `times()` 스텁 구현(stub implementation): 메서드의 껍데기만 만들어두는 것
 
 ```java
-class Chapter01 {
-    @Test
-    void testMultiplication() {
-        Dollar five = new Dollar(5);
-        five.times(2);
-        assertEquals(10, five.amount);
-    }
+@Test
+void testMultiplication() {
+    Dollar five = new Dollar(5);
+    five.times(2);
+    assertEquals(10, five.amount);
 }
 
 class Dollar {
@@ -153,30 +151,6 @@ void times(int multiplier) {
 
 완료!🎈🎈🎈
 
-최종 전체 코드
-
-```java
-class Chapter01 {
-    @Test
-    void testMultiplication() {
-        Dollar five = new Dollar(5);
-        five.times(2);
-        assertEquals(10, five.amount);
-    }
-}
-
-class Dollar {
-    int amount;
-
-    Dollar(int amount) {
-        this.amount = amount;
-    }
-
-    void times(int multiplier) {
-        amount *= multiplier;
-    }
-}
-```
 
 ## 마치기
 
