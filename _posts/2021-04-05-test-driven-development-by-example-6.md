@@ -44,7 +44,7 @@ class Dollar extends Money {
 
 🚩 테스트 실행
 
-![테스트 성공하는 실행 결과 스크린샷](/assets/images/post/2021-04-05-test-driven-development-by-example-6_2.jpeg)
+![테스트 성공하는 실행 결과 스크린샷](/assets/images/post/2021-04-05-test-driven-development-by-example-6_2.png)
 
 ## STEP 3
 
@@ -82,7 +82,7 @@ class Dollar extends Money {
 
 🚩 테스트 실행
 
-![테스트 성공하는 실행 결과 스크린샷](/assets/images/post/2021-04-05-test-driven-development-by-example-6_2.jpeg)
+![테스트 성공하는 실행 결과 스크린샷](/assets/images/post/2021-04-05-test-driven-development-by-example-6_2.png)
 
 ## STEP 6
 
@@ -235,7 +235,7 @@ class Franc extends Money {
 
 🚩 테스트 실행
 
-![테스트 성공하는 실행 결과 스크린샷](/assets/images/post/2021-04-05-test-driven-development-by-example-6_2.jpeg)
+![테스트 성공하는 실행 결과 스크린샷](/assets/images/post/2021-04-05-test-driven-development-by-example-6_2.png)
 
 ## 마치기
 
