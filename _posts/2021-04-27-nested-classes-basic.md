@@ -1,6 +1,6 @@
 ---
 title: "중첩 클래스 Nested Classes: 기본"
-excerpt: "functions를 등록하여 alias처럼 사용하기, alias에 인자 받고 싶을 때"
+excerpt: "중첩 클래스 종류, 특징, 사용하는 이유 등 기본적인 내용 정리"
 date: 2021-04-27
 ---
 
