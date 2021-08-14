@@ -199,6 +199,16 @@ Host github-user2
 아래와 같이 config에서 설정한 `Host`로 변경한 주소를 set-url
 
 ```bash
+$ git remote set-url origin git@HOST:USERNAME/REPOSITORY.git
+```
+
+- 예시
+
+```bash
+# Default account인 경우
+$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+
+# Other account인 경우
 $ git remote set-url origin git@github-user2:USERNAME/REPOSITORY.git
 ```
 
