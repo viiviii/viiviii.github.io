@@ -47,6 +47,18 @@ Mac에서는 키 체인에 추가할 수 있음
 $ ssh-add -K /path/to/private_key
 ```
 
+### 🍎 Mac인 경우
+
+Mac에서 ssh config 파일에 아래의 옵션만 추가하면 위 절차 없이 훨씬 간편하게 사용 가능
+
+```
+   AddKeysToAgent yes
+   UseKeychain yes
+```
+  - 대략적인 설명
+    - UseKeychain: 키체인에 암호 추가(생략하는 경우 사용 안함)
+    - AddKeysToAgent: 인증 중에 사용되는 private key를 ssh-agent에 추가
+
 ### (선택사항) 조금 더 간단하게 한줄로 쓰기
 
 하지만 매번 저렇게 쓰는게 귀찮다면 한 줄로 쓸 수 있음
@@ -64,5 +76,9 @@ $ eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519_username
 # 참고링크
 
 [Mac에서 키 체인 추가](https://stackoverflow.com/questions/21095054/ssh-key-still-asking-for-password-and-passphrase)
+
+[github docs](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent)
+
+[open-ssh docs](http://www.openssh.com/txt/release-7.2)
 
 ---
