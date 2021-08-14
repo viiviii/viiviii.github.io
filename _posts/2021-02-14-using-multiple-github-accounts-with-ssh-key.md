@@ -77,8 +77,15 @@ Host github-user2
 
 ### 생성한 SSH Public key 클립 보드에 복사
 
+- 윈도우
+
 ```bash
 $ clip < ~/.ssh/id_ed25519_userName.pub
+```
+
+- MacOS
+```bash
+$ pbcopy < ~/.ssh/id_ed25519_userName.pub
 ```
 
 ### GitHub 사이트의 SSH 설정 페이지로 이동
