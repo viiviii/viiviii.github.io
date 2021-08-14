@@ -94,17 +94,17 @@ $ clip < ~/.ssh/id_ed25519_userName.pub
 ### 연결 테스트
 
 ```bash
-$ ssh -T git@userName
+$ ssh -T git@github.com
 ```
 
-아래와 같이 뜨면 연결에 성공한 것
+- 아래와 같이 뜨면 연결에 성공한 것
 
 ```
 Enter passphrase for key '/c/Users/JohnDoe/.ssh/id_ed25519_username2':
 Hi username2! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
-만약 이렇게 뜨면 yes
+- 만약 이렇게 뜨면 yes
 
 ```
 The authenticity of host 'github.com (...)' can't be established.
@@ -115,6 +115,9 @@ Enter passphrase for key '/c/Users/JohnDoe/.ssh/id_ed25519_userName':
 Hi user2! You've successfully authenticated, but GitHub does not provide shell access.
 ```
 
+- 에러 나는 경우 - Error: Permission denied (publickey)
+
+  - 비밀번호를 여러번 틀렸거나 아니면 [공식문서의 이 부분](https://docs.github.com/en/github/authenticating-to-github/troubleshooting-ssh/error-permission-denied-publickey) 확인해볼 것
 
 
 # SSH 사용하기
@@ -202,6 +205,7 @@ $ git remote set-url origin git@github-user2:USERNAME/REPOSITORY.git
 ---
 
 # 참고링크
+[ssh로 연결하기 github docs](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 [Changing a remote's URL](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
 
