@@ -73,6 +73,19 @@ Host github-user2
 
 난 이렇게 설정함
 
+📌📌📌 추가(Mac인 경우)
+
+```
+   AddKeysToAgent yes
+   UseKeychain yes
+```
+- 위 두개의 옵션을 추가하여 좀 더 편하게 사용 가능
+  - 원래는 매번 비밀번호 입력해야 함
+  - 대략적인 설명
+    - UseKeychain: 키체인에 암호 추가(생략하는 경우 사용 안함)
+    - AddKeysToAgent: 인증 중에 사용되는 private key를 ssh-에이전트에 추가
+
+
 ## 3. GitHub에서 SSH 설정
 
 ### 생성한 SSH Public key 클립 보드에 복사
