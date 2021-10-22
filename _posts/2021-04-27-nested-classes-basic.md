@@ -69,3 +69,12 @@ date: 2021-04-27
 - Effective java(2판)
 - 자바의 정석(3판)
 - [https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html](https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html)
+
+
+
+
+{% viiviii/bbc737fe6e2f0fc5b3ce51f6db63b96d %}
+
+
+{% gist viiviii/bbc737fe6e2f0fc5b3ce51f6db63b96d %}
+
