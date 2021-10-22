@@ -20,9 +20,9 @@ date: 2021-04-27
     - `static`
 - nested class는 총 네 가지가 종류가 있으며 아래와 같이 다양하게 불린다
     1. member class
-        - 인스턴스 클래스(instance class), instance member class, member class, inner class, ...
+      - 인스턴스 클래스(instance class), instance member class, member class, inner class, ...
     2. static nested classes
-        - 정적 클래스(static class), static member class, static inner class,  ...
+      - 정적 클래스(static class), static member class, static inner class,  ...
     3. local classe 지역 클래스
     4. anonymous classes 익명 클래스
 - `member`라는 키워드는 member 자리에 선언되기 때문이다
@@ -46,11 +46,11 @@ date: 2021-04-27
 
 1. 논리적으로 그룹화
     - **한 곳에서만 사용되는 클래스인 경우** 해당 클래스에 포함시켜 둘을 함께 유지하는게 논리적이다
-        - 이러한 `helper classes`를 중첩시키면 패키지가 더욱 간소화됨
+     - 이러한 `helper classes`를 중첩시키면 패키지가 더욱 간소화됨
 2. 캡슐화, 접근성 증가
     - A와 B라는 최상위 클래스가 있고, B가 `private`로 선언된 A의 `member`에 접근해야 하는 경우
-        - A에 B를 숨기면 A의 `member`를 `private`으로 유지할 수 있고 B는 A에 접근이 가능해짐
-        - B 자체를 외부에 숨길 수 있음
+     - A에 B를 숨기면 A의 `member`를 `private`으로 유지할 수 있고 B는 A에 접근이 가능해짐
+     - B 자체를 외부에 숨길 수 있음
 3. 더 읽기 쉽고 관리하기 쉬운 코드
     - 코드가 사용되는 곳에 더 가깝게 위치하게 되므로
 
